@@ -3,7 +3,7 @@
 **Reproduce DeFi hack incidents using Foundry.**
 
 
-838 incidents included.
+839 incidents included.
 
 Let's make Web3 secure! Join [Discord](https://discord.gg/Fjyngakf3h)
 
@@ -61,6 +61,8 @@ If you appreciate our work, please consider donating. Even a small amount helps 
 [20260903 NotionalFinance - ERC1155 fCash mint overflow drains escrow](#20260903-notionalfinance---erc1155-fcash-mint-overflow-drains-escrow)
 
 [20260901 ReflexerGEB](#20260901-reflexergeb---shared-gebproxyactions-library-registered-as-safe-owner)
+
+[20260831 FloatProtocol - Uniswap V3 spot price manipulation of Hypervisor LP shares](#20260831-floatprotocol---uniswap-v3-spot-price-manipulation-of-hypervisor-lp-shares)
 
 [20260822 SandboxOFT](#20260822-sandboxoft---layerzero-delegate-hijack-via-approveandcall)
 
@@ -1801,6 +1803,13 @@ forge test --contracts src/test/2026-08/ReflexerGEB_exp.sol -vvv
 ```
 #### Contract
 [ReflexerGEB_exp.sol](src/test/2026-08/ReflexerGEB_exp.sol)
+### 20260831 FloatProtocol - Uniswap V3 spot price manipulation of Hypervisor LP shares
+### Lost: ~$28,000 (10.71 ETH)
+```sh
+forge test --contracts src/test/2026-08/FloatProtocol_exp.sol -vvv
+```
+#### Contract
+[FloatProtocol_exp.sol](src/test/2026-08/FloatProtocol_exp.sol)
 ### 20260822 SandboxOFT - LayerZero delegate hijack via approveAndCall
 ### Lost: 10,000,000 SAND minted unbacked (~$517,170 face value, one of 400+ repeated txs in an ongoing campaign)
 ```sh
